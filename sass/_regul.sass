@@ -1,0 +1,69 @@
+.regul
+    padding-top: 92px
+    padding-bottom: 56px
+    position: relative
+    overflow: hidden
+    &::before
+        content: ""
+        position: absolute
+        width: 337px
+        height: 310px
+        left: -142px
+        top: 314px
+
+        background: #9FF772
+        filter: blur(250px)
+    &__img
+        position: absolute
+        right: -285px
+        top: -222px
+        transition: all 0.3s
+        animation: regul 5s infinite linear
+        img
+            transform: rotate(45deg)
+    &__title
+        position: relative
+        z-index: 2
+        font-weight: 700
+        font-size: 70px
+        line-height: 104.5%
+        color: #171717
+        margin: 0
+        margin-bottom: 8px
+    &__subtitle
+        position: relative
+        z-index: 2
+        margin-bottom: 61px
+        margin-top: 0
+        max-width: 870px
+        font-weight: 500
+        font-size: 25px
+        line-height: 140%
+        color: #171717
+    &__block
+        position: relative
+        z-index: 2
+        display: flex
+        align-items: flex-start
+        padding-top: 41px
+        padding-bottom: 45px
+        border-bottom: 2px solid #E9E9E9
+        &:last-child
+            border-bottom: 0
+    &__name
+        padding-left: 52px
+        padding-right: 100px
+        width: 450px
+        margin: 0
+        font-weight: 500
+        font-size: 25px
+        line-height: 120%
+        color: #171717
+    &__text
+        padding-right: 225px
+        width: calc(100% - 450px)
+        font-size: 16px
+        line-height: 160.5%
+        color: #162137
+        margin: 0
+        padding-top: 4px
