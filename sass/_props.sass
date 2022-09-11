@@ -1,0 +1,160 @@
+.props
+    padding-top: 92px
+    padding-bottom: 59px
+    background: #171717
+    position: relative
+    overflow: hidden
+    &__circle
+        position: absolute
+        bottom: -220px
+        left: -203px
+        display: flex
+    &__title
+        margin: 0
+        font-size: 70px
+        line-height: 104.5%
+        color: #FFFFFF
+        max-width: 900px
+    &__wrap
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        position: relative
+        z-index: 2
+    &__img
+        margin-left: -30px
+    &__slider
+        width: 434px
+        p
+            padding-right: 27px
+            margin-top: 0
+            font-size: 16px
+            line-height: 160.5%
+            color: #FFFFFF
+            padding-left: 1px
+    &__block
+        height: auto
+    &__top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 47px
+    &__arrows
+        display: flex
+        align-items: center
+        grid-gap: 20px
+    &__prev, &__next
+        path
+            transition: all 0.3s
+        &:hover
+            cursor: pointer
+            path
+                stroke: #fff
+    &__nums
+        display: flex
+        align-items: center
+    &__curr
+        margin-right: 142px
+        font-weight: 500
+        font-size: 35px
+        line-height: 140%
+        color: #FFFFFF
+        position: relative
+        &::after
+            content: ""
+            display: block
+            width: 105px
+            height: 2px
+            background-color: #fff
+            position: absolute
+            left: calc(100% + 19px)
+            top: 22px
+    &__all
+        font-weight: 500
+        font-size: 35px
+        line-height: 140%
+        color: #3D3D3D
+@media(max-width: 1249px)
+    .props
+        &__title
+            margin-bottom: 60px
+        &__img
+            width: 600px
+            img
+                max-width: 100%
+        &__circle
+            bottom: -300px
+@media(max-width: 991px)
+    .props
+        &__wrap
+            align-items: flex-end
+        &__title
+            margin-bottom: 60px
+            max-width: 100%
+            font-size: 60px
+        &__img
+            width: 600px
+            img
+                max-width: 100%
+        &__circle
+            width: 550px
+            height: 550px
+            bottom: -180px
+        &__slider
+            width: 400px
+            p
+                padding-right: 0
+@media(max-width: 767px)
+    .props
+        &__wrap
+            display: block
+        &__circle
+            bottom: auto
+            top: 300px
+            left: -300px
+        &__slider
+            width: 100%
+@media(max-width: 575px)
+    .props
+        padding: 65px 0
+        &__title
+            font-size: 40px
+            line-height: 96.5%
+            margin-bottom: 12px
+        &__img
+            margin-right: -20px
+            margin-left: -20px
+            width: 100vw
+            margin-bottom: 50px
+        &__circle
+            width: 85vw
+            height: 85vw
+            top: 190px
+            left: -65px
+        &__nums
+            width: 100%
+            justify-content: space-between
+            margin-bottom: 20px
+        &__curr
+            &::after
+                width: calc(100vw - 140px)
+                left: 50px
+        &__top
+            display: block
+        &__arrows
+            width: 100%
+            justify-content: center
+        &__prev, &__next
+            width: 71px
+            height: 71px
+            display: flex
+            justify-content: center
+            align-items: center
+            background: #9FF772
+            border-radius: 50%
+            transition: all 0.3s
+            path
+                stroke: #000
+            &:hover
+                path
+                    stroke: #000

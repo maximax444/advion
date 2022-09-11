@@ -1,0 +1,92 @@
+.warn
+    padding-top: 94px
+    padding-bottom: 128px
+    overflow: hidden
+    &__title
+        margin-top: 0
+        margin-bottom: 86px
+        font-weight: 700
+        font-size: 70px
+        line-height: 104.5%
+        color: #171717
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+    &__img
+        background: #E9E9E9
+        border-radius: 50%
+        width: 447px
+        height: 447px
+        padding-left: 168px
+        padding-bottom: 11px
+        display: flex
+        align-items: flex-end
+        justify-content: flex-start
+    &__slider
+        width: 415px
+        margin-right: 156px
+        position: relative
+    &__block
+        p
+            border-left: 1px solid #171717
+            margin-bottom: 48px
+            padding-left: 32px
+@media(max-width: 1249px)
+    .warn
+        &__slider
+            margin-right: 0
+        &__img
+            img
+                max-width: 130%
+@media(max-width: 991px)
+    .warn
+        &__wrap
+            display: block
+        &__img
+            margin: 0 auto
+            margin-bottom: 50px
+        &__slider
+            width: 100%
+        &__block
+            height: auto
+@media(max-width: 767px)
+    .warn
+        padding-bottom: 160px
+        &__title
+            font-size: 50px
+        &__wrap
+            padding-right: 120px
+        &__slider
+            margin-right: -120px
+            width: calc(100% + 120px)
+        &__img
+            width: 275px
+            height: 275px
+            padding-left: 103px
+            img
+                max-width: 232px
+@media(max-width: 575px)
+    .warn
+        padding-bottom: 137px
+        padding-top: 65px
+        &__title
+            font-size: 40px
+            line-height: 96.5%
+            margin-bottom: 26px
+        &__block
+            p
+                margin-bottom: 46px
+        .reviews__arrows
+            bottom: -71px
+@media(max-width: 369px)
+    .warn
+        &__title
+            margin-bottom: 50px
+        &__img
+            width: 200px
+            height: 200px
+            padding-left: 40px
+            margin-bottom: 30px
+            img
+                max-width: 200px
