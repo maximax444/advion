@@ -1,0 +1,183 @@
+.delivery
+    padding-top: 92px
+    padding-bottom: 80px
+    background: #E9E9E9
+    &__title
+        margin: 0
+        margin-bottom: 57px
+        font-weight: 700
+        font-size: 70px
+        line-height: 104.5%
+        color: #171717
+    &__block
+        border-radius: 80px
+        margin-bottom: 28px
+        background-color: #fff
+        &.active
+            .delivery__name
+                background: #171717
+                color: #fff
+            .delivery__sign
+                &::before, &::after
+                    background-color: #9FF772
+                &::after
+                    height: 0
+                    top: 50%
+    &__name
+        background: #fff
+        border-radius: 80px
+        height: 107px
+        position: relative
+        z-index: 4
+        line-height: 107px
+        padding-left: 210px
+        font-weight: 500
+        font-size: 25px
+        color: #171717
+        transition: all 0.3s
+        cursor: pointer
+        &::after
+            width: 100%
+            height: 100%
+            content: ""
+            display: block
+            border-radius: 80px
+            background: #171717
+            position: absolute
+            top: 0
+            left: 0
+            opacity: 0
+            transition: all 0.3s
+        span
+            position: relative
+            z-index: 3
+    &__cont
+        padding: 0 105px
+        padding-top: 32px
+        padding-bottom: 20px
+        border-radius: 0px 0px 80px 80px
+        display: none
+        ul
+            margin: 0
+            padding: 0
+            list-style-type: none
+            li
+                font-size: 16px
+                line-height: 26px
+                margin-bottom: 12px
+                font-size: 16px
+                color: #171717
+                padding-left: 39px
+                position: relative
+                &::before
+                    content: ""
+                    display: block
+                    width: 10px
+                    height: 10px
+                    border-radius: 50%
+                    background: #171717
+                    position: absolute
+                    top: 7px
+                    left: 0
+                span
+                    line-height: 38px
+                    display: block
+    &__num
+        width: 79px
+        height: 79px
+        background: #9FF772
+        border-radius: 80px
+        position: absolute
+        z-index: 3
+        top: 14px
+        left: 14px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: 500
+        font-size: 25px
+        line-height: 87%
+        color: #171717
+    &__sign
+        position: absolute
+        top: 42px
+        z-index: 3
+        right: 65px
+        width: 24px
+        height: 24px
+        &::before
+            content: ""
+            display: block
+            height: 4px
+            width: 100%
+            background-color: #171717
+            position: absolute
+            top: 10px
+            transition: all 0.3s
+            left: 0
+        &::after
+            content: ""
+            display: block
+            height: 100%
+            width: 4px
+            background-color: #171717
+            position: absolute
+            left: 10px
+            top: 0
+            transition: all 0.3s
+@media(min-width: 768px)
+    .delivery__name
+        &:hover
+            background: #171717
+            color: #fff
+            &::after
+                opacity: 1
+            .delivery__sign
+                &::before, &::after
+                    background-color: #9FF772
+@media(max-width: 991px)
+    .delivery
+        &__name
+            padding-left: 140px
+        &__cont
+            padding-left: 50px
+            padding-right: 50px
+@media(max-width: 767px)
+    .delivery
+        &__block
+            border-radius: 51px
+            &.active
+                .delivery__name
+                    &::after
+                        opacity: 1
+        &__name
+            height: auto
+            padding: 119px 23px 37px 43px
+            font-size: 25px
+            line-height: 140%
+            border-radius: 51px
+            &::after
+                border-radius: 51px
+        &__sign
+            right: 24px
+            top: 42px
+@media(max-width: 575px)
+    .delivery
+        padding-top: 66px
+        padding-bottom: 53px
+        &__block
+            margin-bottom: 21px
+        &__title
+            font-size: 40px
+            line-height: 96.5%
+            margin-bottom: 45px
+            padding-right: 60px
+        &__name
+            padding-right: 50px
+        &__cont
+            padding-left: 22px
+            padding-right: 22px
+@media(max-width: 369px)
+    .delivery
+        &__name
+            padding-right: 20px

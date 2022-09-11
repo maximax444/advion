@@ -1,0 +1,97 @@
+.term
+    background: #171717
+    padding-top: 100px
+    padding-bottom: 131px
+    position: relative
+    &__title
+        margin-top: 0
+        margin-bottom: 18px
+        font-weight: 700
+        font-size: 70px
+        line-height: 104.5%
+        color: #FFFFFF
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        z-index: 2
+    &__block
+        margin-bottom: 55px
+    &__icon
+        display: flex
+        margin-bottom: 16px
+    &__text
+        max-width: 420px
+        font-size: 16px
+        line-height: 160.5%
+        color: #FFFFFF
+        margin: 0
+    &__after
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        display: flex
+        img
+            width: 100%
+    &__list
+        display: none
+@media(max-width: 1249px)
+    .term
+        &__title
+            margin-bottom: 40px
+        &__img
+            width: 540px
+            img
+                width: 100%
+@media(max-width: 991px)
+    .term
+        &__wrap
+            display: block
+        &__img
+            width: 100%
+@media(max-width: 767px)
+    .term
+        &__img
+            margin-bottom: 45px
+        &__list
+            display: block
+            padding: 0
+            margin: 0
+            list-style-type: none
+            li
+                padding-left: 66px
+                margin-bottom: 28px
+                font-size: 16px
+                line-height: 160.5%
+                color: #9FF772
+                position: relative
+                span
+                    width: 31px
+                    height: 31px
+                    display: block
+                    border-radius: 50%
+                    background: #9FF772
+                    font-size: 13.2837px
+                    line-height: 160.5%
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    color: #171717
+                    position: absolute
+                    top: -3px
+                    left: 0
+@media(max-width: 575px)
+    .term
+        padding-bottom: 37px
+        padding-top: 65px
+        &__title
+            font-size: 40px
+            line-height: 96.5%
+            max-width: 320px
+            margin-bottom: 50px
+        &__icon
+            margin-bottom: 38px
+        &__img
+            margin-top: -30px

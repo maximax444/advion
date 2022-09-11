@@ -10,7 +10,7 @@
         height: 310px
         left: -142px
         top: 314px
-
+        z-index: 1
         background: #9FF772
         filter: blur(250px)
     &__img
@@ -67,3 +67,59 @@
         color: #162137
         margin: 0
         padding-top: 4px
+@media(max-width: 1249px)
+    .regul
+        &__text
+            padding-right: 0
+@media(max-width: 991px)
+    .regul
+        &__name
+            padding-left: 0
+            width: 320px
+            padding-right: 40px
+        &__text
+            width: calc(100% - 320px)
+@media(max-width: 767px)
+    .regul
+        &__img
+            animation: regul-mob 4s infinite linear
+            top: 150px
+            right: -150px
+            img
+                transform: none
+        &__subtitle
+            margin-bottom: 160px
+        &__block
+            display: block
+        &__name
+            width: 100%
+        &__text
+            width: 100%
+@media(max-width: 575px)
+    .regul
+        padding-bottom: 30px
+        padding-top: 66px
+        &__title
+            font-size: 40px
+            line-height: 96.5%
+            margin-bottom: 28px
+        &__subtitle
+            font-size: 25px
+            line-height: 115.5%
+            margin-bottom: 149px
+            height: 174px
+        &__block
+            padding: 35px 0
+        &__name
+            font-size: 25px
+            line-height: 115.5%
+            margin-bottom: 19px
+        &__text
+            font-size: 16px
+            line-height: 160.5%
+        &__img
+            width: 500px
+            top: 240px
+            animation: regul-mob2 4s infinite linear
+            img
+                width: 100%

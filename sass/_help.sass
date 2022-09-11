@@ -1,0 +1,67 @@
+.help
+    &__title
+        font-weight: 700
+        font-size: 70px
+        line-height: 104.5%
+        color: #171717
+        margin: 0
+        margin-bottom: 57px
+    &__num
+        width: 79px
+        height: 79px
+        background: #fff
+        border-radius: 80px
+        position: absolute
+        z-index: 3
+        top: 14px
+        left: 14px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: 500
+        font-size: 25px
+        line-height: 87%
+        color: #171717
+        transition: all 0.3s
+    &__block
+        margin-bottom: 28px
+        background: #E9E9E9
+        border-radius: 80px
+        font-size: 16px
+        line-height: 160.5%
+        color: #171717
+        padding: 28px 210px
+        padding-right: 260px
+        position: relative
+        transition: all 0.3s
+        &:hover
+            background: #171717
+            color: #FFFFFF
+            .help__num
+                background: #9FF772
+@media(max-width: 1249px)
+    .help
+        &__block
+            padding-right: 90px
+            padding-left: 140px
+@media(max-width: 991px)
+    .help
+        &__num
+            top: 50%
+            margin-top: -40px
+        &__block
+            padding-right: 90px
+            padding-left: 140px
+@media(max-width: 575px)
+    .help
+        &__title
+            font-size: 35px
+            line-height: 96.5%
+            margin-bottom: 46px
+        &__num
+            top: 14px
+            left: 14px
+            margin-top: 0px
+        &__block
+            padding: 124px 18px 41px 39px
+            border-radius: 51px
