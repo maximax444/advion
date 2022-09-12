@@ -5,521 +5,1031 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Адвион гель</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="/fonts/MazzardH-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/MazzardH-Regular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body>
-    <header class="header" id="header"></header>
-    <section class="props">
-        <div class="props__circle">
-            <img src="img/props-circle.svg" alt="">
-        </div>
-        <div class="container">
-            <h2 class="props__title">Главные особенности препарата</h2>
-            <div class="props__wrap">
-                <div class="props__img">
-                    <img src="img/props-img.png" alt="">
-                </div>
-                <div class="props__slider">
-                    <div class="props__top">
-                        <div class="props__nums">
-                            <div class="props__curr">01</div>
-                            <div class="props__all">06</div>
-                        </div>
-                        <div class="props__arrows">
-                            <div class="props__prev">
-                                <svg width="19" height="12" viewBox="0 0 19 12" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19 6L1.5 6M1.5 6L7 0.499999M1.5 6L7 11.5" stroke="#9FF772" />
-                                </svg>
-                            </div>
-                            <div class="props__next">
-                                <svg width="19" height="12" viewBox="0 0 19 12" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.21238e-07 6L17.5 6M17.5 6L12 11.5M17.5 6L12 0.500002"
-                                        stroke="#9FF772" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="props__block">
-                        <p>Приманка, которую активно потребляют тараканы даже при наличии альтернативных источников
-                            питания
-                        </p>
-                    </div>
-                    <div class="props__block">
-                        <p>Активация действующего вещества ферментами насекомых после потребления</p>
-                    </div>
-                    <div class="props__block">
-                        <p>Борется со всеми самыми распространенными видами тараканов (черный, прусак, американский и
-                            др.)</p>
-                    </div>
-                    <div class="props__block">
-                        <p>Легкое нанесение — залог точного попадания
-                            и уничтожения вредителей</p>
-                    </div>
-                    <div class="props__block">
-                        <p>Задержка действия активного вещества средства, обеспечивает двойной эффект — уничтожение
-                            активных и неактивных тараканов</p>
-                    </div>
-                    <div class="props__block">
-                        <p>Широкая область применения: предназначен для использования организациями, занимающимися
-                            дезинфекционной деятельностью, и населением в быту
-                            для уничтожения синантропных тараканов
-                            в помещениях различного назначения, включая жилые, нежилые, производственные, на объектах
-                            коммунально-бытового назначения (общежития, гостиницы); на предприятиях пищевой
-                            промышленности, общественного питания, магазинах; в детских (кроме спален и игровых комнат),
-                            медицинских (кроме палат стационаров), социальных организациях</p>
+    <div class="fullpage">
+        <header class="header animate__animated animate__fadeInDown" id="header">
+            <div class="container">
+                <div class="header__wrap">
+                    <a href="" class="header__mob">
+                        <svg width="40" height="18" viewBox="0 0 40 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H39" stroke="#171717" stroke-width="2" stroke-linecap="round" />
+                            <path d="M1 9H39" stroke="#171717" stroke-width="2" stroke-linecap="round" />
+                            <path d="M1 17H19.5" stroke="#171717" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </a>
+                    <div class="header__right">
+                        <a href="tel:+7 (333) 782-00-11" class="header__phone">+7 (333) 782-00-11</a>
+                        <a href="" class="header__call">Перезвоните мне</a>
                     </div>
                 </div>
+            </div>
+        </header>
+        <header class="header__scroll" id="header">
+            <div class="container">
+                <div class="header__wrap">
+                    <a href="" class="header__mob">
+                        <svg width="40" height="18" viewBox="0 0 40 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H39" stroke="#171717" stroke-width="2" stroke-linecap="round" />
+                            <path d="M1 9H39" stroke="#171717" stroke-width="2" stroke-linecap="round" />
+                            <path d="M1 17H19.5" stroke="#171717" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </a>
+                    <div class="header__right">
+                        <a href="tel:+7 (333) 782-00-11" class="header__phone">+7 (333) 782-00-11</a>
+                        <a href="" class="header__call">Перезвоните мне</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="menu">
+            <div class="menu__wrap animate__animated animate__fadeInLeft">
+                <div class="menu__close">
+                    <img src="img/menu-close.svg" alt="">
+                </div>
+                <a data-el="1" href="#products">Товары</a>
+                <a data-el="2" href="#features">Преимущества</a>
+                <a data-el="3" href="#props">Главные особенности препарата</a>
+                <a data-el="4" href="#regul">Регламент применения</a>
+                <a data-el="5" href="#use">Технология применения</a>
+                <a data-el="6" href="#warn">Меры предосторожности</a>
+                <a data-el="7" href="#help">Первая помощь</a>
+                <a data-el="8" href="#reviews">Отзывы</a>
+                <a data-el="9" href="#term">Срок годности и условия хранения</a>
+                <a data-el="10" href="#delivery">Оплата и доставка</a>
+                <div data-now="1" class="menu__animal"><img src="img/menu.svg" alt=""></div>
             </div>
         </div>
-    </section>
-    <section class="regul">
-        <div class="container">
-            <h2 class="regul__title">Регламент применения</h2>
-            <p class="regul__subtitle">для специалистов организаций, занимающихся дезинфекционной деятельностью и
-                населения в быту</p>
-            <div class="regul__img"><img src="img/regul-img.png" alt=""></div>
-            <div class="regul__block">
-                <h3 class="regul__name">Целевые организмы</h3>
-                <p class="regul__text">Черный таракан (Blatta orientalis), Рыжий таракан, прусак (Blattella germanica),
-                    Американский таракан (Periplaneta americana)</p>
+        <section class="main">
+            <div class="main__circle animate__animated animate__fadeInRight"></div>
+            <div class="main__small animate__animated animate__fadeInRight"></div>
+            <div class="main__human animate__animated animate__fadeInRight"><img src="img/main-human.png" alt=""></div>
+            <div class="main__human-mob animate__animated animate__fadeInRight"><img src="img/main-human-mob.png"
+                    alt=""></div>
+            <a href="#products" class="main__bottom animate__animated animate__fadeInUp"><svg width="12" height="19"
+                    viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 0V17.5M6 17.5L0.5 12M6 17.5L11.5 12" stroke="white" />
+                </svg></a>
+            <div class="container">
+                <div class="main__animal animate__animated animate__fadeInDown"><img src="img/main-animal.png" alt="">
+                </div>
+                <div class="main__green animate__animated animate__backInLeft"></div>
+                <h1 class="main__title animate__animated animate__fadeInUp">Устали <br>
+                    от тараканов?</h1>
+                <p class="main__subtitle animate__animated animate__fadeInUp"><b>Advion Cocroach</b> —
+                    американское средство
+                    со <b>100%</b> эффективностью</p>
+                <div class="main__products animate__animated animate__fadeInUp">
+                    <img src="img/main-products.png" alt="">
+                </div>
+                <div class="main__pied animate__animated animate__fadeInUp">
+                    <img src="img/main-pied.svg" alt="">
+                </div>
             </div>
-            <div class="regul__block">
-                <h3 class="regul__name">Норма расхода препарата</h3>
-                <p class="regul__text">1-5 подложек на 10 м2 в зависимости от численности насекомых</p>
-            </div>
-            <div class="regul__block">
-                <h3 class="regul__name">Способ обработки
-                </h3>
-                <p class="regul__text">Средство наносят на подложки (например, пластиковые крышки
-                    от&nbsp;бутылок) и размещают около мест обнаружения, возможного обитания или передвижения тараканов.
-                    Следует проверять и добавлять свежее средство на имеющиеся подложки 1 раз в 7-14 дней
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="use">
-        <div class="container">
-            <h2 class="use__title">Технология применения</h2>
-            <div class="use__wrap">
-                <div class="use__block">
-                    <div class="use__img">
-                        <img src="img/use.svg" alt="">
-                    </div>
-                    <p class="use__text">Перед обработкой провести уборку помещения, собрать остатки пищи, крошки,
-                        пищевые отходы и другие источники пищи насекомых</p>
+        </section>
+        <section class="products" id="products">
+            <div class="container">
+                <h2 class="products__title">Товары</h2>
+                <div class="products__wrap">
+                    <a href="" class="products__block" data-id="1">
+                        <span class="products__img">
+                            <img src="img/products1.png" alt="">
+                        </span>
+                        <span class="products__plus"></span>
+                        <span class="products__cont">
+                            <span class="products__name">Advion gel</span>
+                            <span class="products__count">1 шт.</span>
+                            <span class="products__bottom">
+                                <span class="products__price">2 500 ₽</span>
+                                <span class="products__btn">Купить в 1 клик</span>
+                            </span>
+                        </span>
+                    </a>
+                    <a href="" class="products__block" data-id="2">
+                        <span class="products__img">
+                            <img src="img/products2.png" alt="">
+                        </span>
+                        <span class="products__plus"></span>
+                        <span class="products__cont">
+                            <span class="products__name">Advion gel</span>
+                            <span class="products__count">2 шт.</span>
+                            <span class="products__bottom">
+                                <span class="products__price">4 000 ₽</span>
+                                <span class="products__btn">Купить в 1 клик</span>
+                            </span>
+                        </span>
+                    </a>
+                    <a href="" class="products__block" data-id="3">
+                        <span class="products__img">
+                            <img src="img/products3.png" alt="">
+                        </span>
+                        <span class="products__plus"></span>
+                        <span class="products__cont">
+                            <span class="products__name">Advion gel</span>
+                            <span class="products__count">Упаковка (х шт.)</span>
+                            <span class="products__bottom">
+                                <span class="products__price">8 000 ₽</span>
+                                <span class="products__btn">Купить в 1 клик</span>
+                            </span>
+                        </span>
+                    </a>
                 </div>
-                <div class="use__block">
-                    <div class="use__img">
-                        <img src="img/use2.svg" alt="">
-                    </div>
-                    <p class="use__text">Плотно накрыть емкости с водой, закрыть водопроводные краны, лишив насекомых
-                        источников влаги </p>
-                </div>
-                <div class="use__block">
-                    <div class="use__img">
-                        <img src="img/use3.svg" alt="">
-                    </div>
-                    <p class="use__text">Средство наносят на подложки (например, пластиковые крышки от бутылок)
-                        и размещают около мест обнаружения, возможного обитания или передвижения тараканов — вдоль
-                        плинтусов, под раковинами, за холодильниками, около емкостей
-                        для сбора мусора и пищевых отходов, на нижние полки столов, около стояков и труб горячего
-                        водоснабжения и других подобных мест</p>
-                </div>
-                <div class="use__block">
-                    <div class="use__img">
-                        <img src="img/use4.svg" alt="">
-                    </div>
-                    <p class="use__text">С помощью прилагаемого наконечника средство можно нанести непосредственно в
-                        трещины и щели около мест обитания тараканов</p>
-                </div>
-                <div class="use__block">
-                    <div class="use__img">
-                        <img src="img/use5.svg" alt="">
-                    </div>
-                    <p class="use__text">При расстановке приманок следует убедиться, что погибшие насекомые не будут
-                        попадать в пищевые продукты, посуду и прочее</p>
-                </div>
-                <div class="use__block">
-                    <div class="use__img">
-                        <img src="img/use6.svg" alt="">
-                    </div>
-                    <p class="use__text">При уборке помещений подложки можно временно убирать и затем возвращать на
-                        место</p>
-                </div>
-                <div class="use__block">
-                    <div class="use__img">
-                        <img src="img/use7.svg" alt="">
-                    </div>
-                    <p class="use__text">Не рекомендуется одновременное использование средства с другими инсектицидными
-                        средствами</p>
-                </div>
-                <div class="use__block">
-                    <div class="use__img">
-                        <img src="img/use8.svg" alt="">
-                    </div>
-                    <p class="use__text">Следует регулярно проверять приманки на предмет потребления их насекомыми
-                        и добавлять свежее средство на имеющиеся подложки (1 раз в 7-14 дней)
+        </section>
+        <section class="effect" id="effect">
+            <div class="container">
+                <div class="effect__wrap">
+                    <h2 class="effect__title">Самое эффективное средство на&nbsp;рынке</h2>
+                    <p class="effect__text"><b>нацеленное на&nbsp;борьбу со&nbsp;всеми видами тараканов,</b>
+                        в&nbsp;частности
+                        с&nbsp;прусаками. Уникальный механизм действия препарата эффективно влияет на&nbsp;целевые
+                        организмы.
+                        Высокая вкусовая привлекательность
+                        и&nbsp;<b>революционное действующее вещество обеспечивают быстрое уничтожение</b> популяций
+                        тараканов
                     </p>
                 </div>
-                <a href="" class="use__more">Показать ещё</a>
             </div>
-        </div>
-    </section>
-    <section class="warn">
-        <div class="container">
-            <h2 class="warn__title">Меры <br> предосторо&shy;жности</h2>
-            <div class="warn__wrap">
-                <div class="warn__img">
-                    <img src="img/warn.png" alt="">
+        </section>
+        <section class="features" id="features">
+            <div class="features__cloud1">
+                <img src="img/features-cloud1.png" data-desk="img/features-cloud1-mob.png" alt="">
+            </div>
+            <div class="features__cloud2">
+                <img src="img/features-cloud2.svg" alt="">
+            </div>
+            <div class="container">
+                <div class="features__title">Преимущества <span><img src="img/features-title.svg" alt=""></span></div>
+                <div class="features__wrap">
+                    <div class="features__block">
+                        <div class="features__img">
+                            <img src="img/features1.svg" alt="">
+                        </div>
+                        <p class="features__text">Высокая вкусовая <br> привлекательность для&nbsp;тараканов
+                        </p>
+                    </div>
+                    <div class="features__block">
+                        <div class="features__img">
+                            <img src="img/features2.svg" alt="">
+                        </div>
+                        <p class="features__text">Позитивный экологический профиль, безопасный для&nbsp;нецелевых
+                            объектов
+                        </p>
+                    </div>
+                    <div class="features__block">
+                        <div class="features__img">
+                            <img src="img/features3.svg" alt="">
+                        </div>
+                        <p class="features__text">«Горизонтальный перенос» обеспечивает вторичное (до&nbsp;76&nbsp;%)
+                            и&nbsp;третичное (до&nbsp;81&nbsp;%) уничтожение тараканов</p>
+                    </div>
+                    <div class="features__block">
+                        <div class="features__img">
+                            <img src="img/features4.svg" alt="">
+                        </div>
+                        <p class="features__text">Эффективная борьба с&nbsp;невосприимчивыми (отвращение к&nbsp;гелевым
+                            приманкам)
+                            и&nbsp;резистентными популяциями тараканов
+                        </p>
+                    </div>
+                    <div class="features__block">
+                        <div class="features__img">
+                            <img src="img/features5.svg" alt="">
+                        </div>
+                        <p class="features__text">Инновационный механизм действия
+                            с&nbsp;эффектом биоактивации <br>
+                            в&nbsp;организме вредителя
+                        </p>
+                    </div>
                 </div>
-                <div class="warn__slider">
+            </div>
+        </section>
+        <section class="props" id="props">
+            <div class="props__circle">
+                <img src="img/props-circle.svg" alt="">
+            </div>
+            <div class="container">
+                <h2 class="props__title">Главные особенности препарата</h2>
+                <div class="props__wrap">
+                    <div class="props__img">
+                        <img src="img/props-img.png" alt="">
+                    </div>
+                    <div class="props__slider">
+                        <div class="props__top">
+                            <div class="props__nums">
+                                <div class="props__curr">01</div>
+                                <div class="props__all">06</div>
+                            </div>
+                            <div class="props__arrows">
+                                <div class="props__prev">
+                                    <svg width="19" height="12" viewBox="0 0 19 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6L1.5 6M1.5 6L7 0.499999M1.5 6L7 11.5" stroke="#9FF772" />
+                                    </svg>
+                                </div>
+                                <div class="props__next">
+                                    <svg width="19" height="12" viewBox="0 0 19 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.21238e-07 6L17.5 6M17.5 6L12 11.5M17.5 6L12 0.500002"
+                                            stroke="#9FF772" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="props__block">
+                            <p>Приманка, которую активно потребляют тараканы даже при наличии альтернативных источников
+                                питания
+                            </p>
+                        </div>
+                        <div class="props__block">
+                            <p>Активация действующего вещества ферментами насекомых после потребления</p>
+                        </div>
+                        <div class="props__block">
+                            <p>Борется со всеми самыми распространенными видами тараканов (черный, прусак, американский
+                                и
+                                др.)</p>
+                        </div>
+                        <div class="props__block">
+                            <p>Легкое нанесение — залог точного попадания
+                                и уничтожения вредителей</p>
+                        </div>
+                        <div class="props__block">
+                            <p>Задержка действия активного вещества средства, обеспечивает двойной эффект — уничтожение
+                                активных и неактивных тараканов</p>
+                        </div>
+                        <div class="props__block">
+                            <p>Широкая область применения: предназначен для использования организациями, занимающимися
+                                дезинфекционной деятельностью, и населением в быту
+                                для уничтожения синантропных тараканов
+                                в помещениях различного назначения, включая жилые, нежилые, производственные, на
+                                объектах
+                                коммунально-бытового назначения (общежития, гостиницы); на предприятиях пищевой
+                                промышленности, общественного питания, магазинах; в детских (кроме спален и игровых
+                                комнат),
+                                медицинских (кроме палат стационаров), социальных организациях</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="regul" id="regul">
+            <div class="container">
+                <h2 class="regul__title">Регламент применения</h2>
+                <p class="regul__subtitle">для специалистов организаций, занимающихся дезинфекционной деятельностью и
+                    населения в быту</p>
+                <div class="regul__img"><img src="img/regul-img.png" alt=""></div>
+                <div class="regul__block">
+                    <h3 class="regul__name">Целевые организмы</h3>
+                    <p class="regul__text">Черный таракан (Blatta orientalis), Рыжий таракан, прусак (Blattella
+                        germanica),
+                        Американский таракан (Periplaneta americana)</p>
+                </div>
+                <div class="regul__block">
+                    <h3 class="regul__name">Норма расхода препарата</h3>
+                    <p class="regul__text">1-5 подложек на 10 м2 в зависимости от численности насекомых</p>
+                </div>
+                <div class="regul__block">
+                    <h3 class="regul__name">Способ обработки
+                    </h3>
+                    <p class="regul__text">Средство наносят на подложки (например, пластиковые крышки
+                        от&nbsp;бутылок) и размещают около мест обнаружения, возможного обитания или передвижения
+                        тараканов.
+                        Следует проверять и добавлять свежее средство на имеющиеся подложки 1 раз в 7-14 дней
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="use" id="use">
+            <div class="container">
+                <h2 class="use__title">Технология применения</h2>
+                <div class="use__wrap">
+                    <div class="use__block">
+                        <div class="use__img">
+                            <img src="img/use.svg" alt="">
+                        </div>
+                        <p class="use__text">Перед обработкой провести уборку помещения, собрать остатки пищи, крошки,
+                            пищевые отходы и другие источники пищи насекомых</p>
+                    </div>
+                    <div class="use__block">
+                        <div class="use__img">
+                            <img src="img/use2.svg" alt="">
+                        </div>
+                        <p class="use__text">Плотно накрыть емкости с водой, закрыть водопроводные краны, лишив
+                            насекомых
+                            источников влаги </p>
+                    </div>
+                    <div class="use__block">
+                        <div class="use__img">
+                            <img src="img/use3.svg" alt="">
+                        </div>
+                        <p class="use__text">Средство наносят на подложки (например, пластиковые крышки от бутылок)
+                            и размещают около мест обнаружения, возможного обитания или передвижения тараканов — вдоль
+                            плинтусов, под раковинами, за холодильниками, около емкостей
+                            для сбора мусора и пищевых отходов, на нижние полки столов, около стояков и труб горячего
+                            водоснабжения и других подобных мест</p>
+                    </div>
+                    <div class="use__block">
+                        <div class="use__img">
+                            <img src="img/use4.svg" alt="">
+                        </div>
+                        <p class="use__text">С помощью прилагаемого наконечника средство можно нанести непосредственно в
+                            трещины и щели около мест обитания тараканов</p>
+                    </div>
+                    <div class="use__block">
+                        <div class="use__img">
+                            <img src="img/use5.svg" alt="">
+                        </div>
+                        <p class="use__text">При расстановке приманок следует убедиться, что погибшие насекомые не будут
+                            попадать в пищевые продукты, посуду и прочее</p>
+                    </div>
+                    <div class="use__block">
+                        <div class="use__img">
+                            <img src="img/use6.svg" alt="">
+                        </div>
+                        <p class="use__text">При уборке помещений подложки можно временно убирать и затем возвращать на
+                            место</p>
+                    </div>
+                    <div class="use__block">
+                        <div class="use__img">
+                            <img src="img/use7.svg" alt="">
+                        </div>
+                        <p class="use__text">Не рекомендуется одновременное использование средства с другими
+                            инсектицидными
+                            средствами</p>
+                    </div>
+                    <div class="use__block">
+                        <div class="use__img">
+                            <img src="img/use8.svg" alt="">
+                        </div>
+                        <p class="use__text">Следует регулярно проверять приманки на предмет потребления их насекомыми
+                            и добавлять свежее средство на имеющиеся подложки (1 раз в 7-14 дней)
+                        </p>
+                    </div>
+                    <a href="" class="use__more">Показать ещё</a>
+                </div>
+            </div>
+        </section>
+        <section class="warn" id="warn">
+            <div class="container">
+                <h2 class="warn__title">Меры <br> предосторо&shy;жности</h2>
+                <div class="warn__wrap">
+                    <div class="warn__img">
+                        <img src="img/warn.png" alt="">
+                    </div>
+                    <div class="warn__slider">
+                        <div class="reviews__arrows">
+                            <div class="reviews__prev prev-warn"><img src="img/prev.svg" alt=""></div>
+                            <div class="reviews__next next-warn"><img src="img/next.svg" alt=""></div>
+                        </div>
+                        <div class="warn__block">
+                            <p>При работе со средством избегать попадания его на кожу и слизистые оболочки глаз. После
+                                окончания работы со средством вымыть руки водой с мылом</p>
+                            <p>Средство располагать в местах, недоступных детям и домашним животным (в том числе
+                                птицам). Не
+                                наносить на поверхности, имеющие непосредственный контакт
+                                с человеком, пищевой посудой и продуктами питания (рабочие поверхности столов,
+                                внутренние
+                                поверхности ящиков, полок
+                                для хранения посуды и продуктов)</p>
+                        </div>
+                        <div class="warn__block">
+                            <p>Работающие со средством обязаны строго соблюдать правила личной гигиены. Запрещается на
+                                местах работы принимать пищу, пить и курить. После завершения работы моют руки, лицо и
+                                прополаскивают водой рот</p>
+                            <p>В детских организациях и на пищевых объектах (объекты общественного питания, пищевые
+                                цеха,
+                                продовольственные магазины и т.д.) обработку проводят в санитарные дни
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="help" id="help">
+            <div class="container">
+                <h2 class="help__title">Первая помощь</h2>
+                <div class="help__block">
+                    <div class="help__num">01</div>
+                    При случайном попадании средства в желудок выпить 1-2 стакана воды с адсорбентом (10-15 измельченных
+                    таблеток активированного угля на стакан воды)
+                </div>
+                <div class="help__block">
+                    <div class="help__num">02</div>
+                    При попадании на кожные покровы снять средство ватным тампоном, не втирая; затем вымыть загрязненный
+                    участок водой с мылом
+                </div>
+                <div class="help__block">
+                    <div class="help__num">03</div>
+                    При попадании в глаза обильно промыть их под струей воды, при раздражении глаз закапать 20% раствор
+                    сульфацила натрия
+                </div>
+            </div>
+        </section>
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2 class="reviews__title">Отзывы</h2>
+                <div class="reviews__slider">
                     <div class="reviews__arrows">
-                        <div class="reviews__prev prev-warn"><img src="img/prev.svg" alt=""></div>
-                        <div class="reviews__next next-warn"><img src="img/next.svg" alt=""></div>
+                        <div class="reviews__prev prev-rev"><img src="img/prev.svg" alt=""></div>
+                        <div class="reviews__next next-rev"><img src="img/next.svg" alt=""></div>
                     </div>
-                    <div class="warn__block">
-                        <p>При работе со средством избегать попадания его на кожу и слизистые оболочки глаз. После
-                            окончания работы со средством вымыть руки водой с мылом</p>
-                        <p>Средство располагать в местах, недоступных детям и домашним животным (в том числе птицам). Не
-                            наносить на поверхности, имеющие непосредственный контакт
-                            с человеком, пищевой посудой и продуктами питания (рабочие поверхности столов, внутренние
-                            поверхности ящиков, полок
-                            для хранения посуды и продуктов)</p>
-                    </div>
-                    <div class="warn__block">
-                        <p>Работающие со средством обязаны строго соблюдать правила личной гигиены. Запрещается на
-                            местах работы принимать пищу, пить и курить. После завершения работы моют руки, лицо и
-                            прополаскивают водой рот</p>
-                        <p>В детских организациях и на пищевых объектах (объекты общественного питания, пищевые цеха,
-                            продовольственные магазины и т.д.) обработку проводят в санитарные дни
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="help">
-        <div class="container">
-            <h2 class="help__title">Первая помощь</h2>
-            <div class="help__block">
-                <div class="help__num">01</div>
-                При случайном попадании средства в желудок выпить 1-2 стакана воды с адсорбентом (10-15 измельченных
-                таблеток активированного угля на стакан воды)
-            </div>
-            <div class="help__block">
-                <div class="help__num">02</div>
-                При попадании на кожные покровы снять средство ватным тампоном, не втирая; затем вымыть загрязненный
-                участок водой с мылом
-            </div>
-            <div class="help__block">
-                <div class="help__num">03</div>
-                При попадании в глаза обильно промыть их под струей воды, при раздражении глаз закапать 20% раствор
-                сульфацила натрия
-            </div>
-        </div>
-    </section>
-    <section class="reviews">
-        <div class="container">
-            <h2 class="reviews__title">Отзывы</h2>
-            <div class="reviews__slider">
-                <div class="reviews__arrows">
-                    <div class="reviews__prev prev-rev"><img src="img/prev.svg" alt=""></div>
-                    <div class="reviews__next next-rev"><img src="img/next.svg" alt=""></div>
-                </div>
-                <div class="reviews__block reviews__slide">
-                    <div class="reviews__img"><img src="img/reviews-img.png" alt=""></div>
-                    <p class="reviews__text">Муравьиная ферма в масштабах квартиры, или как муравьи сделали нашу жизнь
-                        веселее. Как избавится от муравьев в доме быстро. Рассказ. ФОТО.</p>
-                    <a href="" class="reviews__btn">Проверить отзыв <br>
-                        на площадке-отзовике</a>
-                    <div class="reviews__bottom">
-                        <a href="" class="reviews__link">
-                            <img src="img/recc.png" alt="">
-                        </a>
-                        <div class="reviews__stars">
-                            <span><img src="img/reviews-star-full.svg" alt="">
-                            </span>
-                            <span><img src="img/reviews-star-full.svg" alt="">
-                            </span>
-                            <span><img src="img/reviews-star-full.svg" alt="">
-                            </span>
-                            <span><img src="img/reviews-star-full.svg" alt="">
-                            </span><span class="half"><img src="img/reviews-star-half.svg" alt=""></span>
+                    <div class="reviews__block reviews__slide">
+                        <div class="reviews__img"><img src="img/reviews-img.png" alt=""></div>
+                        <p class="reviews__text">Муравьиная ферма в масштабах квартиры, или как муравьи сделали нашу
+                            жизнь
+                            веселее. Как избавится от муравьев в доме быстро. Рассказ. ФОТО.</p>
+                        <a href="" class="reviews__btn">Проверить отзыв <br>
+                            на площадке-отзовике</a>
+                        <div class="reviews__bottom">
+                            <a href="" class="reviews__link">
+                                <img src="img/recc.png" alt="">
+                            </a>
+                            <div class="reviews__stars">
+                                <span><img src="img/reviews-star-full.svg" alt="">
+                                </span>
+                                <span><img src="img/reviews-star-full.svg" alt="">
+                                </span>
+                                <span><img src="img/reviews-star-full.svg" alt="">
+                                </span>
+                                <span><img src="img/reviews-star-full.svg" alt="">
+                                </span><span class="half"><img src="img/reviews-star-half.svg" alt=""></span>
 
 
-                        </div>
-                        <div class="reviews__likes">
-                            <div class="reviews__likes-block">
-                                <img src="img/reviews-likes.svg" alt="">
-                                <span>5</span>
                             </div>
-                            <div class="reviews__likes-block">
-                                <img src="img/reviews-dis.svg" alt="">
-                                <span>1</span>
+                            <div class="reviews__likes">
+                                <div class="reviews__likes-block">
+                                    <img src="img/reviews-likes.svg" alt="">
+                                    <span>5</span>
+                                </div>
+                                <div class="reviews__likes-block">
+                                    <img src="img/reviews-dis.svg" alt="">
+                                    <span>1</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="reviews__check reviews__slide">
-                    <a href="" class="reviews__view">Проверить отзыв на площадке-отзовике <img src="img/next.svg"
-                            alt=""></a>
-                </div>
-                <div class="reviews__block reviews__slide">
-                    <div class="reviews__img"><img src="img/reviews-img.png" alt=""></div>
-                    <p class="reviews__text">1Муравьиная ферма в масштабах квартиры, или как муравьи сделали нашу жизнь
-                        веселее. Как избавится от муравьев в доме быстро. Рассказ. ФОТО.</p>
-                    <a href="" class="reviews__btn">Проверить отзыв <br>
-                        на площадке-отзовике</a>
-                    <div class="reviews__bottom">
-                        <a href="" class="reviews__link">
-                            <img src="img/recc.png" alt="">
-                        </a>
-                        <div class="reviews__stars">
-                            <span><img src="img/reviews-star-full.svg" alt="">
-                            </span>
-                            <span><img src="img/reviews-star-full.svg" alt="">
-                            </span>
-                            <span><img src="img/reviews-star-full.svg" alt="">
-                            </span>
-                            <span><img src="img/reviews-star-full.svg" alt="">
-                            </span><span class="half"><img src="img/reviews-star-half.svg" alt=""></span>
-
-
-                        </div>
-                        <div class="reviews__likes">
-                            <div class="reviews__likes-block">
-                                <img src="img/reviews-likes.svg" alt="">
-                                <span>5</span>
-                            </div>
-                            <div class="reviews__likes-block">
-                                <img src="img/reviews-dis.svg" alt="">
-                                <span>1</span>
-                            </div>
-                        </div>
+                    <div class="reviews__check reviews__slide">
+                        <a href="" class="reviews__view">Проверить отзыв на площадке-отзовике <img src="img/next.svg"
+                                alt=""></a>
                     </div>
-                </div>
-                <div class="reviews__check reviews__slide">
-                    <a href="" class="reviews__view">Проверить отзыв на площадке-отзовике <img src="img/next.svg"
-                            alt=""></a>
-                </div>
-                <div class="reviews__block reviews__slide">
-                    <div class="reviews__img"><img src="img/reviews-img.png" alt=""></div>
-                    <p class="reviews__text">2Муравьиная ферма в масштабах квартиры, или как муравьи сделали нашу жизнь
-                        веселее. Как избавится от муравьев в доме быстро. Рассказ. ФОТО.</p>
-                    <a href="" class="reviews__btn">Проверить отзыв <br>
-                        на площадке-отзовике</a>
-                    <div class="reviews__bottom">
-                        <a href="" class="reviews__link">
-                            <img src="img/recc.png" alt="">
-                        </a>
-                        <div class="reviews__stars">
-                            <span><img src="img/reviews-star-full.svg" alt="">
-                            </span>
-                            <span><img src="img/reviews-star-full.svg" alt="">
-                            </span>
-                            <span><img src="img/reviews-star-full.svg" alt="">
-                            </span>
-                            <span><img src="img/reviews-star-full.svg" alt="">
-                            </span><span class="half"><img src="img/reviews-star-half.svg" alt=""></span>
+                    <div class="reviews__block reviews__slide">
+                        <div class="reviews__img"><img src="img/reviews-img.png" alt=""></div>
+                        <p class="reviews__text">1Муравьиная ферма в масштабах квартиры, или как муравьи сделали нашу
+                            жизнь
+                            веселее. Как избавится от муравьев в доме быстро. Рассказ. ФОТО.</p>
+                        <a href="" class="reviews__btn">Проверить отзыв <br>
+                            на площадке-отзовике</a>
+                        <div class="reviews__bottom">
+                            <a href="" class="reviews__link">
+                                <img src="img/recc.png" alt="">
+                            </a>
+                            <div class="reviews__stars">
+                                <span><img src="img/reviews-star-full.svg" alt="">
+                                </span>
+                                <span><img src="img/reviews-star-full.svg" alt="">
+                                </span>
+                                <span><img src="img/reviews-star-full.svg" alt="">
+                                </span>
+                                <span><img src="img/reviews-star-full.svg" alt="">
+                                </span><span class="half"><img src="img/reviews-star-half.svg" alt=""></span>
 
 
-                        </div>
-                        <div class="reviews__likes">
-                            <div class="reviews__likes-block">
-                                <img src="img/reviews-likes.svg" alt="">
-                                <span>5</span>
                             </div>
-                            <div class="reviews__likes-block">
-                                <img src="img/reviews-dis.svg" alt="">
-                                <span>1</span>
+                            <div class="reviews__likes">
+                                <div class="reviews__likes-block">
+                                    <img src="img/reviews-likes.svg" alt="">
+                                    <span>5</span>
+                                </div>
+                                <div class="reviews__likes-block">
+                                    <img src="img/reviews-dis.svg" alt="">
+                                    <span>1</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="reviews__check reviews__slide">
-                    <a href="" class="reviews__view">Проверить отзыв на площадке-отзовике <img src="img/next.svg"
-                            alt=""></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="term">
-        <div class="term__after">
-            <img src="img/term-text.svg" alt="">
-        </div>
-        <div class="container">
-            <h2 class="term__title">Срок годности <br>
-                и условия хранения</h2>
-            <div class="term__wrap">
-                <div class="term__cont">
-                    <div class="term__block">
-                        <div class="term__icon">
-                            <img src="img/term1.svg" alt="">
-                        </div>
-                        <p class="term__text">Хранить средство в сухом, темном, проветриваемом складском помещении, в
-                            закрытой таре изготовителя, отдельно от пищевых продуктов, напитков, лекарственных средств и
-                            кормов для животных.
-                        </p>
+                    <div class="reviews__check reviews__slide">
+                        <a href="" class="reviews__view">Проверить отзыв на площадке-отзовике <img src="img/next.svg"
+                                alt=""></a>
                     </div>
-                    <div class="term__block">
-                        <div class="term__icon">
-                            <img src="img/term2.svg" alt="">
-                        </div>
-                        <p class="term__text">Температура хранения не ниже минус 10 С и не выше плюс 35 С.Срок годности
-                            — З года для умеренного климата, 2 года для жаркого климата.</p>
-                    </div>
-                </div>
-                <div class="term__img">
-                    <img src="img/term-mob.svg" data-desk="img/term.svg" alt="">
-                </div>
-            </div>
-            <ul class="term__list">
-                <li><span>01</span>4 шприца-дозатора <br>
-                    в пластиковом блистере</li>
-                <li><span>02</span>по 30 г. в шприце-дозаторе</li>
-                <li><span>03</span>съемный наконечник</li>
-            </ul>
-        </div>
-    </section>
-    <section class="delivery">
-        <div class="container">
-            <h2 class="delivery__title">Оплата и&nbsp;доставка</h2>
-            <div class="delivery__block">
-                <div class="delivery__name">
-                    <div class="delivery__num">01</div>
-                    <span>Доставка курьером по&nbsp;Москве и МО</span>
-                    <div class="delivery__sign"></div>
-                </div>
-                <div class="delivery__cont">
-                    <ul>
-                        <li>Оформить доставку можно при заказе на сумму от <b>1000 ₽</b></li>
-                        <li>Стоимость доставки по Москве в пределах МКАД — <b>400 ₽</b></li>
-                        <li>Доставка за МКАД — рассчитывается индивидуально</li>
-                        <li>Доставка осуществляется на следующий день после оформления заказа. Стоимость срочной
-                            доставки — 500 руб</li>
-                        <li>Осуществляется в день заказа товара</li>
-                        <li>Доставка товаров по Москве и Московской области осуществляется курьерской службой со склада
-                            в Москве ежедневно с 10:00 до 21:00, при условии что заказ был подтвержден операторами
-                            интернет-магазина Dezea.ru</li>
-                        <li>Курьер осуществляющий доставку предварительно свяжется с Вами по телефону и уточнит время
-                            своего прибытия </li>
-                        <li>Если курьер не смог дозвониться по указанному вами телефону в течение 1 часа, то доставка
-                            может быть перенесена на следующий день!</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="delivery__block">
-                <div class="delivery__name">
-                    <div class="delivery__num">02</div>
-                    <span>Доставка в&nbsp;регионы</span>
-                    <div class="delivery__sign"></div>
-                </div>
-                <div class="delivery__cont">
-                    <ul>
-                        <li>Наша транспортная группа доставит Ваш заказ в любую точку России</li>
-                        <li>Доставка до терминала транспортной компании — бесплатно</li>
-                        <li>Услуги транспортной компании оплачиваются при получении товара</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="delivery__block">
-                <div class="delivery__name">
-                    <div class="delivery__num">03</div>
-                    <span>Самовывоз — бесплатно</span>
-                    <div class="delivery__sign"></div>
-                </div>
-                <div class="delivery__cont">
-                    <ul>
-                        <li>
-                            Самовывоз товара возможен на следующий день после заказа, либо в тот же день при условии
-                            согласования с операторами интернет-магазина Dezea.ru
-                            <span><b>По адресам:</b></span>
-                            <span>Россия, Москва, ул. Бажова, д. 17 (м. Ростокино)</span>
-                            <span>Россия, Москва, Луганская, 5 (метро Царицыно)</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                    <div class="reviews__block reviews__slide">
+                        <div class="reviews__img"><img src="img/reviews-img.png" alt=""></div>
+                        <p class="reviews__text">2Муравьиная ферма в масштабах квартиры, или как муравьи сделали нашу
+                            жизнь
+                            веселее. Как избавится от муравьев в доме быстро. Рассказ. ФОТО.</p>
+                        <a href="" class="reviews__btn">Проверить отзыв <br>
+                            на площадке-отзовике</a>
+                        <div class="reviews__bottom">
+                            <a href="" class="reviews__link">
+                                <img src="img/recc.png" alt="">
+                            </a>
+                            <div class="reviews__stars">
+                                <span><img src="img/reviews-star-full.svg" alt="">
+                                </span>
+                                <span><img src="img/reviews-star-full.svg" alt="">
+                                </span>
+                                <span><img src="img/reviews-star-full.svg" alt="">
+                                </span>
+                                <span><img src="img/reviews-star-full.svg" alt="">
+                                </span><span class="half"><img src="img/reviews-star-half.svg" alt=""></span>
 
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrap">
-                <a href="#header" class="footer__logo">
-                    <img src="img/footer-logo.png" alt="">
-                </a>
-                <a href="" class="footer__polit">Политика конфиденциальности</a>
-                <a href="" class="footer__dev">
-                    <span>Разработка сайта </span>
-                    <?xml version="1.0" encoding="utf-8"?>
-                    <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="249.5px" height="52px"
-                        viewBox="0 0 249.5 52" enable-background="new 0 0 249.5 52" xml:space="preserve">
-                        <path fill="#FFFFFF"
-                            d="M236.2,34.2c3.7-5.7,7.5-11.4,11.2-17.1c0.7,0,1.3,0,2.1,0c-0.7,1-1.3,2-2,3c-3.4,5.2-6.8,10.3-10.1,15.5
+
+                            </div>
+                            <div class="reviews__likes">
+                                <div class="reviews__likes-block">
+                                    <img src="img/reviews-likes.svg" alt="">
+                                    <span>5</span>
+                                </div>
+                                <div class="reviews__likes-block">
+                                    <img src="img/reviews-dis.svg" alt="">
+                                    <span>1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__check reviews__slide">
+                        <a href="" class="reviews__view">Проверить отзыв на площадке-отзовике <img src="img/next.svg"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="term" id="term">
+            <div class="term__after">
+                <img src="img/term-text.svg" alt="">
+            </div>
+            <div class="container">
+                <h2 class="term__title">Срок годности <br>
+                    и условия хранения</h2>
+                <div class="term__wrap">
+                    <div class="term__cont">
+                        <div class="term__block">
+                            <div class="term__icon">
+                                <img src="img/term1.svg" alt="">
+                            </div>
+                            <p class="term__text">Хранить средство в сухом, темном, проветриваемом складском помещении,
+                                в
+                                закрытой таре изготовителя, отдельно от пищевых продуктов, напитков, лекарственных
+                                средств и
+                                кормов для животных.
+                            </p>
+                        </div>
+                        <div class="term__block">
+                            <div class="term__icon">
+                                <img src="img/term2.svg" alt="">
+                            </div>
+                            <p class="term__text">Температура хранения не ниже минус 10 С и не выше плюс 35 С.Срок
+                                годности
+                                — З года для умеренного климата, 2 года для жаркого климата.</p>
+                        </div>
+                    </div>
+                    <div class="term__img">
+                        <img src="img/term-mob.svg" data-desk="img/term.svg" alt="">
+                    </div>
+                </div>
+                <ul class="term__list">
+                    <li><span>01</span>4 шприца-дозатора <br>
+                        в пластиковом блистере</li>
+                    <li><span>02</span>по 30 г. в шприце-дозаторе</li>
+                    <li><span>03</span>съемный наконечник</li>
+                </ul>
+            </div>
+        </section>
+        <section class="delivery" id="delivery">
+            <div class="container">
+                <h2 class="delivery__title">Оплата и&nbsp;доставка</h2>
+                <div class="delivery__block">
+                    <div class="delivery__name">
+                        <div class="delivery__num">01</div>
+                        <span>Доставка курьером по&nbsp;Москве и МО</span>
+                        <div class="delivery__sign"></div>
+                    </div>
+                    <div class="delivery__cont">
+                        <ul>
+                            <li>Оформить доставку можно при заказе на сумму от <b>1000 ₽</b></li>
+                            <li>Стоимость доставки по Москве в пределах МКАД — <b>400 ₽</b></li>
+                            <li>Доставка за МКАД — рассчитывается индивидуально</li>
+                            <li>Доставка осуществляется на следующий день после оформления заказа. Стоимость срочной
+                                доставки — 500 руб</li>
+                            <li>Осуществляется в день заказа товара</li>
+                            <li>Доставка товаров по Москве и Московской области осуществляется курьерской службой со
+                                склада
+                                в Москве ежедневно с 10:00 до 21:00, при условии что заказ был подтвержден операторами
+                                интернет-магазина Dezea.ru</li>
+                            <li>Курьер осуществляющий доставку предварительно свяжется с Вами по телефону и уточнит
+                                время
+                                своего прибытия </li>
+                            <li>Если курьер не смог дозвониться по указанному вами телефону в течение 1 часа, то
+                                доставка
+                                может быть перенесена на следующий день!</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="delivery__block">
+                    <div class="delivery__name">
+                        <div class="delivery__num">02</div>
+                        <span>Доставка в&nbsp;регионы</span>
+                        <div class="delivery__sign"></div>
+                    </div>
+                    <div class="delivery__cont">
+                        <ul>
+                            <li>Наша транспортная группа доставит Ваш заказ в любую точку России</li>
+                            <li>Доставка до терминала транспортной компании — бесплатно</li>
+                            <li>Услуги транспортной компании оплачиваются при получении товара</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="delivery__block">
+                    <div class="delivery__name">
+                        <div class="delivery__num">03</div>
+                        <span>Самовывоз — бесплатно</span>
+                        <div class="delivery__sign"></div>
+                    </div>
+                    <div class="delivery__cont">
+                        <ul>
+                            <li>
+                                Самовывоз товара возможен на следующий день после заказа, либо в тот же день при условии
+                                согласования с операторами интернет-магазина Dezea.ru
+                                <span><b>По адресам:</b></span>
+                                <span>Россия, Москва, ул. Бажова, д. 17 (м. Ростокино)</span>
+                                <span>Россия, Москва, Луганская, 5 (метро Царицыно)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrap">
+                    <a href="#header" class="footer__logo">
+                        <img src="img/footer-logo.png" alt="">
+                    </a>
+                    <a href="" class="footer__polit">Политика конфиденциальности</a>
+                    <a href="" class="footer__dev">
+                        <span>Разработка сайта </span>
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="249.5px" height="52px"
+                            viewBox="0 0 249.5 52" enable-background="new 0 0 249.5 52" xml:space="preserve">
+                            <path fill="#FFFFFF"
+                                d="M236.2,34.2c3.7-5.7,7.5-11.4,11.2-17.1c0.7,0,1.3,0,2.1,0c-0.7,1-1.3,2-2,3c-3.4,5.2-6.8,10.3-10.1,15.5
 	c-0.2,0.3-0.2,0.6-0.2,0.9c0,3.7,0,7.4,0,11c0,0.2,0,0.5,0,0.8c-0.6,0-1.1,0-1.8,0c0-0.2,0-0.5,0-0.7c0-3.7,0-7.3,0-11
 	c0-0.5-0.2-1-0.4-1.4c-3.9-5.9-7.8-11.9-11.7-17.8c-0.1-0.1-0.1-0.2-0.2-0.4c0.7,0,1.3,0,2.1,0C228.7,22.8,232.4,28.5,236.2,34.2z" />
-                        <path fill="#FFFFFF" d="M236.2,4.8c2.2,0,4,1.8,4,4s-1.8,4-4,4s-4-1.8-4-4C232.1,6.6,234,4.8,236.2,4.8z M236.1,6.4
+                            <path fill="#FFFFFF" d="M236.2,4.8c2.2,0,4,1.8,4,4s-1.8,4-4,4s-4-1.8-4-4C232.1,6.6,234,4.8,236.2,4.8z M236.1,6.4
 	c-1.3,0-2.3,1.1-2.4,2.4c0,1.3,1,2.4,2.4,2.4c1.3,0,2.3-1,2.4-2.4C238.5,7.4,237.5,6.4,236.1,6.4z">
-                            <animateTransform accumulate="none" additive="replace" attributeName="transform"
-                                attributeType="XML" calcMode="linear" dur="1.5s" fill="remove" id="crown"
-                                repeatCount="indefinite" restart="always" type="translate" values="0,2;0,-3;0,2">
-                            </animateTransform>
-                        </path>
-                        <path fill="#FFFFFF" d="M204.2,48.3c-0.7,0-1.2,0-1.9,0c0-9.8,0-19.6,0-29.5c-3.9,0-7.8,0-11.7,0c0-0.6,0-1.2,0-1.7
+                                <animateTransform accumulate="none" additive="replace" attributeName="transform"
+                                    attributeType="XML" calcMode="linear" dur="1.5s" fill="remove" id="crown"
+                                    repeatCount="indefinite" restart="always" type="translate" values="0,2;0,-3;0,2">
+                                </animateTransform>
+                            </path>
+                            <path fill="#FFFFFF" d="M204.2,48.3c-0.7,0-1.2,0-1.9,0c0-9.8,0-19.6,0-29.5c-3.9,0-7.8,0-11.7,0c0-0.6,0-1.2,0-1.7
 	c8.1,0,16.3,0,24.5,0c0.3,0.6,0.7,1.1,1,1.7c-3.9,0-8.1,0-12,0C204.2,28.8,204.2,38.5,204.2,48.3z" />
-                        <path fill="#FFFFFF"
-                            d="M177.4,17.1c0.6,0,1.2,0,1.8,0c0,10.4,0,20.8,0,31.2c-0.6,0-1.1,0-1.8,0C177.4,38,177.4,27.6,177.4,17.1z" />
-                        <path fill="#FFFFFF" d="M149.5,48.3c0-10.4,0-20.8,0-31.2c0.6,0,1.1,0,1.8,0c0,9.8,0,19.6,0,29.5c6.1,0,12.2,0,18.3,0
+                            <path fill="#FFFFFF"
+                                d="M177.4,17.1c0.6,0,1.2,0,1.8,0c0,10.4,0,20.8,0,31.2c-0.6,0-1.1,0-1.8,0C177.4,38,177.4,27.6,177.4,17.1z" />
+                            <path fill="#FFFFFF" d="M149.5,48.3c0-10.4,0-20.8,0-31.2c0.6,0,1.1,0,1.8,0c0,9.8,0,19.6,0,29.5c6.1,0,12.2,0,18.3,0
 	c-0.3,0.6-0.5,1.2-0.7,1.7C162.5,48.3,156,48.3,149.5,48.3z" />
-                        <path fill="#FFFFFF" d="M142,48.3c-0.7,0-1.2,0-1.9,0c-4.4-10.1-8.9-20.2-13.5-30.6c-4.6,10.3-9,20.5-13.5,30.6c-0.6,0-1.2,0-1.9,0
+                            <path fill="#FFFFFF" d="M142,48.3c-0.7,0-1.2,0-1.9,0c-4.4-10.1-8.9-20.2-13.5-30.6c-4.6,10.3-9,20.5-13.5,30.6c-0.6,0-1.2,0-1.9,0
 	c5.1-11.6,10.2-23.1,15.4-35C131.8,25.2,136.9,36.8,142,48.3z" />
-                        <path fill="#FFFFFF" d="M88.8,43.2c0.3-0.6,0.5-1.3,0.8-2c0.4,0.5,0.7,1,0.9,1.4c1.9,2.7,4.4,4.1,7.7,4c4.1-0.2,6.8-2.9,7.3-6.1
+                            <path fill="#FFFFFF" d="M88.8,43.2c0.3-0.6,0.5-1.3,0.8-2c0.4,0.5,0.7,1,0.9,1.4c1.9,2.7,4.4,4.1,7.7,4c4.1-0.2,6.8-2.9,7.3-6.1
 	c0.3-2.1-0.5-3.7-2-5.1c-1.6-1.5-3.7-2.4-5.6-3.4c-1.6-0.9-3.2-1.7-4.6-2.7c-3.1-2.4-3.8-6.4-1.6-9.7c1-1.6,2.6-2.6,4.4-3
 	c2.8-0.7,5.4-0.2,7.8,1.4c0.6,0.5,0.9,0.9,1.1,1.4c0.2,0.7,0.4,1.3,0.6,2.1c-0.2-0.2-0.5-0.3-0.7-0.5c-1.5-1.2-3-2.2-4.9-2.7
 	c-2.5-0.6-5.2,0.2-6.5,2c-1.9,2.6-1.4,5.9,1.5,7.8c2,1.3,4.1,2.3,6.2,3.4c1.8,0.9,3.5,2,4.7,3.6c2.5,3.3,2.1,7.6-0.9,10.4
 	c-4.6,4.4-12.7,3.5-16-1.9C89,43.5,88.9,43.3,88.8,43.2z" />
-                        <path fill="#FFFFFF" d="M70.6,33.5c-1.3,0-2.6,0-3.9,0c0,4.9,0,9.8,0,14.8c-0.6,0-1.2,0-1.7,0c0-10.4,0-20.8,0-31.3
+                            <path fill="#FFFFFF" d="M70.6,33.5c-1.3,0-2.6,0-3.9,0c0,4.9,0,9.8,0,14.8c-0.6,0-1.2,0-1.7,0c0-10.4,0-20.8,0-31.3
 	c0.3,0,0.6,0,0.9,0c2.3,0,4.6-0.1,6.8,0.1c4.5,0.4,7.2,3.5,7.2,8c0,4.4-2.5,7.4-6.8,8.1c-0.2,0-0.3,0.1-0.6,0.1
 	c3.1,5,6.3,9.9,9.4,14.9c-0.7,0-1.3,0-2.1,0C76.8,43.5,73.7,38.5,70.6,33.5z M66.7,31.6c2,0,3.9,0.2,5.8,0c3.4-0.3,5.2-2.2,5.6-5.6
 	c0.4-3.2-1.4-6.1-4.3-6.9c-1-0.3-2.1-0.3-3.2-0.4c-1.3-0.1-2.6,0-3.9,0C66.7,23.1,66.7,27.5,66.7,31.6z" />
-                        <path fill="#FFFFFF" d="M57.4,46.8c-0.2,0.6-0.4,1.1-0.6,1.7c-6,0-14.4,0-20.5,0c0.2-0.6,0.5-1.1,0.7-1.7
+                            <path fill="#FFFFFF" d="M57.4,46.8c-0.2,0.6-0.4,1.1-0.6,1.7c-6,0-14.4,0-20.5,0c0.2-0.6,0.5-1.1,0.7-1.7
 	C42.9,46.8,51.3,46.8,57.4,46.8z">
-                            <animateTransform accumulate="none" additive="replace" attributeName="transform"
-                                attributeType="XML" begin=".5" calcMode="linear" dur="1.5s" fill="remove" id="crown"
-                                repeatCount="indefinite" restart="always" type="translate" values="3,0;-3,0;3,0">
-                            </animateTransform>
-                        </path>
-                        <path fill="#FFFFFF"
-                            d="M36.1,18.9c0.2-0.6,0.4-1.1,0.6-1.7c6,0,20.3,0,20.3,0s-0.5,1.1-0.7,1.7C50.3,18.9,42.1,18.9,36.1,18.9z">
-                            <animateTransform accumulate="none" additive="replace" attributeName="transform"
-                                attributeType="XML" calcMode="linear" dur="1.5s" fill="remove" id="crown"
-                                repeatCount="indefinite" restart="always" type="translate" values="2,0;-2,0;2,0">
-                            </animateTransform>
-                        </path>
-                        <path fill="#FFFFFF" d="M36.8,33.5c-0.2-0.5-0.4-1-0.6-1.6c5,0,12.3,0,17.3,0c0.2,0.5,0.5,1,0.7,1.6C49.2,33.5,41.9,33.5,36.8,33.5z
+                                <animateTransform accumulate="none" additive="replace" attributeName="transform"
+                                    attributeType="XML" begin=".5" calcMode="linear" dur="1.5s" fill="remove" id="crown"
+                                    repeatCount="indefinite" restart="always" type="translate" values="3,0;-3,0;3,0">
+                                </animateTransform>
+                            </path>
+                            <path fill="#FFFFFF"
+                                d="M36.1,18.9c0.2-0.6,0.4-1.1,0.6-1.7c6,0,20.3,0,20.3,0s-0.5,1.1-0.7,1.7C50.3,18.9,42.1,18.9,36.1,18.9z">
+                                <animateTransform accumulate="none" additive="replace" attributeName="transform"
+                                    attributeType="XML" calcMode="linear" dur="1.5s" fill="remove" id="crown"
+                                    repeatCount="indefinite" restart="always" type="translate" values="2,0;-2,0;2,0">
+                                </animateTransform>
+                            </path>
+                            <path fill="#FFFFFF" d="M36.8,33.5c-0.2-0.5-0.4-1-0.6-1.6c5,0,12.3,0,17.3,0c0.2,0.5,0.5,1,0.7,1.6C49.2,33.5,41.9,33.5,36.8,33.5z
 	">
-                            <animateTransform accumulate="none" additive="replace" attributeName="transform"
-                                attributeType="XML" begin=".2" calcMode="linear" dur="1.5s" fill="remove" id="crown"
-                                repeatCount="indefinite" restart="always" type="translate" values="3,0;-3,0;3,0">
-                            </animateTransform>
-                        </path>
-                        <path fill="#FFFFFF" d="M30.8,17.2c-0.7,0-1.2,0-1.9,0C24.4,27.4,20,37.5,15.4,47.8c-4.6-10.3-9-20.4-13.5-30.6c-0.6,0-1.2,0-1.9,0
+                                <animateTransform accumulate="none" additive="replace" attributeName="transform"
+                                    attributeType="XML" begin=".2" calcMode="linear" dur="1.5s" fill="remove" id="crown"
+                                    repeatCount="indefinite" restart="always" type="translate" values="3,0;-3,0;3,0">
+                                </animateTransform>
+                            </path>
+                            <path fill="#FFFFFF" d="M30.8,17.2c-0.7,0-1.2,0-1.9,0C24.4,27.4,20,37.5,15.4,47.8c-4.6-10.3-9-20.4-13.5-30.6c-0.6,0-1.2,0-1.9,0
 	C5.1,28.8,10.2,40.2,15.4,52C20.6,40.2,25.7,28.8,30.8,17.2z" />
-                    </svg>
-                </a>
-                <a href="#header" class="footer__top">
-                    <img src="img/footer-top.svg" alt="">
-                </a>
+                        </svg>
+                    </a>
+                    <a href="#header" class="footer__top">
+                        <img src="img/footer-top.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <div class="overlay overlay-call">
+            <div class="popup-wrap">
+                <div class="popup popup-call animate__animated animate__fadeInUp">
+                    <div class="popup-close"></div>
+                    <div class="popup-call__title">перезвоните мне</div>
+                    <form class="popup-call__form">
+                        <input type="text" required placeholder="Имя">
+                        <input type="tel" required placeholder="Телефон">
+                        <button class="popup-call__btn">Отправить</button>
+                        <label class="check">
+                            <input type="checkbox" class="checkbox" name="" id="" required>
+                            <span></span>
+                            <p>
+                                Даю согласие на обработку своих <br> персональных данных
+                            </p>
+                        </label>
+
+                    </form>
+
+                </div>
             </div>
         </div>
-    </footer>
+        <div class="overlay overlay-prod" data-id="1">
+            <div class="popup-wrap">
+                <div class="popup popup-prod animate__animated animate__fadeInUp">
+                    <div class="popup-close"></div>
+                    <div class="popup-prod__slider">
+                        <div><img src="img/prod1.png" alt=""></div>
+                        <div><img src="img/products1.png" alt=""></div>
+                        <div><img src="img/products2.png" alt=""></div>
+                        <div><img src="img/products3.png" alt=""></div>
+                    </div>
+                    <div class="popup-prod__wrap">
+                        <div class="popup-prod__graph">
+                            <div class="popup-prod__vert">
+                                <a href="" class="active"><img src="img/prod1.png" alt=""></a>
+                                <a href=""><img src="img/products1.png" alt=""></a>
+                                <a href=""><img src="img/products2.png" alt=""></a>
+                                <a href=""><img src="img/products3.png" alt=""></a>
+                            </div>
+                            <div class="popup-prod__img">
+                                <img src="img/prod1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="popup-prod__main">
+                            <div class="popup-prod__title">advion gel</div>
+                            <div class="popup-prod__count">Количество: 1 шт.</div>
+                            <div class="popup-prod__price">2 500 ₽</div>
+                            <div class="popup-prod__line"><span>Насекомые:</span><b>Тараканы</b></div>
+                            <div class="popup-prod__line"><span>Препаративная форма:</span><b>Гель</b></div>
+                            <div class="popup-prod__line"><span>Фасовка (литраж):</span><b>30гр</b></div>
+                            <div class="popup-prod__line"><span>Действующее вещество:</span><b>Индоксакарб 0,6%</b>
+                            </div>
+                            <div class="popup-prod__line"><span>Производитель:</span><b>США</b></div>
+                        </div>
+                    </div>
+                    <div class="popup-prod__bottom">
+                        <div class="popup-prod__markets">
+                            Купить на маркетплейсах
+                            <div class="popup-prod__links">
+                                <a href="">
+                                    <img src="img/prod-links1.png" alt="">
+                                    <span><img src="img/prod-links1-h.png" alt=""></span>
+                                </a>
+                                <a href="">
+                                    <img src="img/prod-links2.png" alt="">
+                                    <span><img src="img/prod-links2-h.png" alt=""></span>
+                                </a>
+                                <a href="">
+                                    <img src="img/prod-links3.png" alt="">
+                                    <span><img src="img/prod-links3-h.png" alt=""></span>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="" class="popup-prod__click">Купить в 1 клик</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay overlay-prod" data-id="2">
+            <div class="popup-wrap">
+                <div class="popup popup-prod animate__animated animate__fadeInUp">
+                    <div class="popup-close"></div>
+                    <div class="popup-prod__slider">
+                        <div><img src="img/prod1.png" alt=""></div>
+                        <div><img src="img/products1.png" alt=""></div>
+                        <div><img src="img/products2.png" alt=""></div>
+                        <div><img src="img/products3.png" alt=""></div>
+                    </div>
+                    <div class="popup-prod__wrap">
+                        <div class="popup-prod__graph">
+                            <div class="popup-prod__vert">
+                                <a href="" class="active"><img src="img/prod1.png" alt=""></a>
+                                <a href=""><img src="img/products1.png" alt=""></a>
+                                <a href=""><img src="img/products2.png" alt=""></a>
+                                <a href=""><img src="img/products3.png" alt=""></a>
+                            </div>
+                            <div class="popup-prod__img">
+                                <img src="img/prod1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="popup-prod__main">
+                            <div class="popup-prod__title">advion gel 2</div>
+                            <div class="popup-prod__count">Количество: 2 шт.</div>
+                            <div class="popup-prod__price">4 000 ₽</div>
+                            <div class="popup-prod__line"><span>Насекомые:</span><b>Тараканы</b></div>
+                            <div class="popup-prod__line"><span>Препаративная форма:</span><b>Гель</b></div>
+                            <div class="popup-prod__line"><span>Фасовка (литраж):</span><b>30гр</b></div>
+                            <div class="popup-prod__line"><span>Действующее вещество:</span><b>Индоксакарб 0,6%</b>
+                            </div>
+                            <div class="popup-prod__line"><span>Производитель:</span><b>США</b></div>
+                        </div>
+                    </div>
+                    <div class="popup-prod__bottom">
+                        <div class="popup-prod__markets">
+                            Купить на маркетплейсах
+                            <div class="popup-prod__links">
+                                <a href="">
+                                    <img src="img/prod-links1.png" alt="">
+                                    <span><img src="img/prod-links1-h.png" alt=""></span>
+                                </a>
+                                <a href="">
+                                    <img src="img/prod-links2.png" alt="">
+                                    <span><img src="img/prod-links2-h.png" alt=""></span>
+                                </a>
+                                <a href="">
+                                    <img src="img/prod-links3.png" alt="">
+                                    <span><img src="img/prod-links3-h.png" alt=""></span>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="" class="popup-prod__click">Купить в 1 клик</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay overlay-prod" data-id="3">
+            <div class="popup-wrap">
+                <div class="popup popup-prod animate__animated animate__fadeInUp">
+                    <div class="popup-close"></div>
+                    <div class="popup-prod__slider">
+                        <div><img src="img/prod1.png" alt=""></div>
+                        <div><img src="img/products1.png" alt=""></div>
+                        <div><img src="img/products2.png" alt=""></div>
+                        <div><img src="img/products3.png" alt=""></div>
+                    </div>
+                    <div class="popup-prod__wrap">
+                        <div class="popup-prod__graph">
+                            <div class="popup-prod__vert">
+                                <a href="" class="active"><img src="img/prod1.png" alt=""></a>
+                                <a href=""><img src="img/products1.png" alt=""></a>
+                                <a href=""><img src="img/products2.png" alt=""></a>
+                                <a href=""><img src="img/products3.png" alt=""></a>
+                            </div>
+                            <div class="popup-prod__img">
+                                <img src="img/prod1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="popup-prod__main">
+                            <div class="popup-prod__title">advion gel x</div>
+                            <div class="popup-prod__count">Количество: x шт.</div>
+                            <div class="popup-prod__price">8 000 ₽</div>
+                            <div class="popup-prod__line"><span>Насекомые:</span><b>Тараканы</b></div>
+                            <div class="popup-prod__line"><span>Препаративная форма:</span><b>Гель</b></div>
+                            <div class="popup-prod__line"><span>Фасовка (литраж):</span><b>30гр</b></div>
+                            <div class="popup-prod__line"><span>Действующее вещество:</span><b>Индоксакарб 0,6%</b>
+                            </div>
+                            <div class="popup-prod__line"><span>Производитель:</span><b>США</b></div>
+                        </div>
+                    </div>
+                    <div class="popup-prod__bottom">
+                        <div class="popup-prod__markets">
+                            Купить на маркетплейсах
+                            <div class="popup-prod__links">
+                                <a href="">
+                                    <img src="img/prod-links1.png" alt="">
+                                    <span><img src="img/prod-links1-h.png" alt=""></span>
+                                </a>
+                                <a href="">
+                                    <img src="img/prod-links2.png" alt="">
+                                    <span><img src="img/prod-links2-h.png" alt=""></span>
+                                </a>
+                                <a href="">
+                                    <img src="img/prod-links3.png" alt="">
+                                    <span><img src="img/prod-links3-h.png" alt=""></span>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="" class="popup-prod__click">Купить в 1 клик</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay overlay-click" data-id="1">
+            <div class="popup-wrap">
+                <div class="popup popup-click animate__animated animate__fadeInUp">
+                    <div class="popup-close"></div>
+                    <div class="popup-click__wrap">
+                        <div class="popup-click__img">
+                            <img src="img/products1.png" alt="">
+                        </div>
+                        <div class="popup-click__main">
+                            <div class="popup-call__title">купить в 1 клик</div>
+                            <div class="popup-click__info">Advion Cocroach: 1 шт. <br>
+                                2 500 ₽
+                            </div>
+                            <form class="popup-call__form">
+                                <input type="text" required placeholder="Имя">
+                                <input type="tel" required placeholder="Телефон">
+                                <button class="popup-call__btn">Отправить заявку</button>
+                                <label class="check">
+                                    <input type="checkbox" class="checkbox" name="" id="" required>
+                                    <span></span>
+                                    <p>
+                                        Даю согласие на обработку своих <br> персональных данных
+                                    </p>
+                                </label>
+
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="overlay overlay-click" data-id="2">
+            <div class="popup-wrap">
+                <div class="popup popup-click animate__animated animate__fadeInUp">
+                    <div class="popup-close"></div>
+                    <div class="popup-click__wrap">
+                        <div class="popup-click__img">
+                            <img src="img/products2.png" alt="">
+                        </div>
+                        <div class="popup-click__main">
+                            <div class="popup-call__title">купить в 1 клик</div>
+                            <div class="popup-click__info">Advion Cocroach: 2 шт. <br>
+                                4 000 ₽
+                            </div>
+                            <form class="popup-call__form">
+                                <input type="text" required placeholder="Имя">
+                                <input type="tel" required placeholder="Телефон">
+                                <button class="popup-call__btn">Отправить заявку</button>
+                                <label class="check">
+                                    <input type="checkbox" class="checkbox" name="" id="" required>
+                                    <span></span>
+                                    <p>
+                                        Даю согласие на обработку своих <br> персональных данных
+                                    </p>
+                                </label>
+
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="overlay overlay-click" data-id="3">
+            <div class="popup-wrap">
+                <div class="popup popup-click animate__animated animate__fadeInUp">
+                    <div class="popup-close"></div>
+                    <div class="popup-click__wrap">
+                        <div class="popup-click__img">
+                            <img src="img/products3.png" alt="">
+                        </div>
+                        <div class="popup-click__main">
+                            <div class="popup-call__title">купить в 1 клик</div>
+                            <div class="popup-click__info">Advion Cocroach: x шт. <br>
+                                8 000 ₽
+                            </div>
+                            <form class="popup-call__form">
+                                <input type="text" required placeholder="Имя">
+                                <input type="tel" required placeholder="Телефон">
+                                <button class="popup-call__btn">Отправить заявку</button>
+                                <label class="check">
+                                    <input type="checkbox" class="checkbox" name="" id="" required>
+                                    <span></span>
+                                    <p>
+                                        Даю согласие на обработку своих <br> персональных данных
+                                    </p>
+                                </label>
+
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>

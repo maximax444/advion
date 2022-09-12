@@ -1,0 +1,171 @@
+.products
+    padding-top: 98px
+    padding-bottom: 110px
+    &__title
+        margin: 0
+        margin-bottom: 63px
+        font-weight: 700
+        font-size: 70px
+        line-height: 87%
+        color: #171717
+        text-align: center
+    &__wrap
+        display: flex
+        justify-content: space-between
+    &__block
+        width: 360px
+        text-decoration: none
+        color: #171717
+        overflow: hidden
+        position: relative
+        &:last-child
+            border-radius: 0px 35px 0px 0px
+        &:nth-child(1)
+            border-radius: 35px 0px 0px 0
+        span
+            transition: all 0.3s
+    &__img
+        background: #E9E9E9
+        height: 387px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: -2px
+        img
+            max-width: 95%
+            max-height: 95%
+    &__cont
+        display: block
+        border: 2px solid #E9E9E9
+        border-top: 2px solid transparent
+        padding: 30px 29px
+        padding-bottom: 22px
+    &__name
+        display: block
+        font-weight: 600
+        font-size: 25px
+        line-height: 160.5%
+        text-transform: uppercase
+        margin-bottom: 5px
+    &__count
+        font-size: 16px
+        line-height: 160.5%
+        margin-bottom: 2px
+    &__bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__price
+        font-weight: 600
+        font-size: 25px
+        line-height: 160.5%
+        text-transform: uppercase
+    &__btn
+        width: 170px
+        height: 50px
+        background: #9FF772
+        border-radius: 142px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 16px
+        line-height: 160.5%
+    &__plus
+        right: 30px
+        top: 355px
+        background: #171717
+        width: 64px
+        height: 64px
+        border-radius: 50%
+        position: absolute
+        display: block
+        &::before
+            content: ""
+            height: 18px
+            width: 2px
+            left: 31px
+            top: 23px
+            background-color: #E9E9E9
+            display: block
+            position: absolute
+            transition: all 0.3s
+        &::after
+            content: ""
+            height: 2px
+            width: 18px
+            left: 23px
+            top: 31px
+            background-color: #E9E9E9
+            display: block
+            position: absolute
+            transition: all 0.3s
+@media(min-width: 992px)
+    .products
+        &__block:hover
+            background: #9FF772
+            .products
+                &__img
+                    background-color: #9FF772
+                &__cont
+                    border: 2px solid transparent
+                    border-top: 2px solid #171717
+                &__plus
+                    background-color: #fff
+                    &::before
+                        background-color: #000
+                    &::after
+                        background-color: #000
+                    &:hover
+                        background: #171717
+                        &::before
+                            background-color: #fff
+                        &::after
+                            background-color: #fff
+                &__btn
+                    background-color: #fff
+                    &:hover
+                        background: #171717
+                        color: #fff
+        &__plus:hover
+            background: #171717
+            &::before
+                background-color: #fff
+            &::after
+                background-color: #fff
+@media(max-width: 1249px)
+    .products
+        &__block
+            width: 320px
+        &__cont
+            padding: 15px
+@media(max-width: 991px)
+    .products
+        &__wrap
+            flex-wrap: wrap
+            grid-gap: 40px 0
+        &__block
+            width: 350px
+@media(max-width: 767px)
+    .products
+        &__wrap
+            justify-content: center
+        &__block
+            width: 100%
+@media(max-width: 575px)
+    .products
+        padding-top: 48px
+        padding-bottom: 64px
+        &__title
+            font-size: 40px
+            line-height: 87%
+            margin-bottom: 26px
+        &__img
+            height: 300px
+        &__plus
+            top: 268px
+@media(max-width: 369px)
+    .products
+        &__title, &__price
+            font-size: 22px
+        &__btn
+            width: 160px

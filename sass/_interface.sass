@@ -19,6 +19,256 @@
         padding-left: 15px
         padding-right: 15px
         margin: auto
+.fullpage
+    position: relative
+    overflow: hidden
+.menu
+    width: 100vw
+    position: fixed
+    height: 100vh
+    background: rgba(0, 0, 0, 0.54)
+    backdrop-filter: blur(16px)
+    z-index: 5
+    display: none
+    &__animal
+        position: absolute
+        top: 135px
+        left: 96%
+        transition: all 0.3s
+        &2
+            top: 40px
+            left: 160%
+            transform: rotate(60deg)
+        &3
+            top: 200px
+            left: 180%
+            transform: rotate(180deg)
+        &4
+            left: 160%
+            top: 475px
+            transform: rotate(330deg)
+        &5
+            top: 240px
+            left: 130%
+            transform: rotate(60deg)
+        &6
+            top: 375px
+            left: 174%
+            transform: rotate(180deg)
+        &7
+            top: 460px
+            left: 144%
+            transform: rotate(60deg)
+        &8
+            top: 595px
+            left: 176%
+            transform: rotate(190deg)
+        &9
+            top: 585px
+            left: 176%
+            transform: rotate(270deg)
+        &10
+            top: 295px
+            left: 110%
+            transform: rotate(300deg)
+    &.fade
+        .menu__wrap
+            animation: fadeOutLeft 0.5s linear
+    &__wrap
+        height: 100%
+        width: 50%
+        background: #171717
+        padding: 43px 120px
+        padding-right: 100px
+        a
+            font-weight: 500
+            font-size: 16px
+            line-height: 52px
+            margin-bottom: 2px
+            display: block
+            color: #FFFFFF
+            text-decoration: none
+            position: relative
+            &::before
+                content: ""
+                display: block
+                height: 1px
+                width: 0
+                transition: all 0.3s
+                left: -120px
+                position: absolute
+                bottom: 0
+                background-color: #9FF772
+            &:hover
+                color: #9FF772
+                &::before
+                    width: calc(50vw - 100px)
+    &__close
+        margin-bottom: 55px
+        cursor: pointer
+    &.active
+        display: block
+
+.header
+    padding: 28px 0
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 5
+    animation-delay: 2000ms
+    &__scroll
+        position: fixed
+        top: -120px
+        background-color: #171717
+        left: 0
+        width: 100%
+        transition: all 0.3s
+        z-index: 5
+        padding: 17px 0
+        path
+            stroke: #fff
+        .header__phone
+            color: #fff
+        .header__wrap
+            width: 100%
+        .header__call
+            border: 1px solid #9FF772
+            &:hover
+                background-color: transparent
+        &.scrolled
+            top: 0
+    &__wrap
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 80%
+    &__right
+        display: flex
+        align-items: center
+        grid-gap: 58px
+    &__phone
+        text-decoration: none
+        font-weight: 500
+        font-size: 16px
+        line-height: 140%
+        color: #171717
+        &:hover
+            opacity: 0.8
+    &__mob
+        path
+            transition: all 0.3s
+        &:hover
+            path
+                stroke: #9FF772
+    &__call
+        width: 220px
+        height: 63px
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #9FF772
+        border-radius: 142px
+        font-size: 16px
+        line-height: 160.5%
+        color: #171717
+        text-decoration: none
+        &:hover
+            background-color: #171717
+            color: #fff
+.main
+    background: #E9E9E9
+    height: 100vh
+    max-height: 1200px
+    position: relative
+    padding-top: 190px
+    .container
+        position: relative
+    &__circle
+        display: block
+        border: 194px solid #FFFFFF
+        border-radius: 50%
+        width: 670px
+        height: 670px
+        top: -50px
+        right: 135px
+        position: absolute
+        animation-delay: 2000ms
+    &__small
+        position: absolute
+        width: 63px
+        height: 63px
+        background: #FFFFFF
+        left: 880px
+        top: 400px
+        border-radius: 50%
+        animation-delay: 2600ms
+    &__animal
+        position: absolute
+        top: -190px
+        left: 0
+        display: flex
+        animation-delay: 1000ms
+    &__human
+        height: 100%
+        display: flex
+        position: absolute
+        top: 0
+        right: -30px
+        animation-delay: 1000ms
+        img
+            height: 100%
+        &-mob
+            display: none
+    &__title
+        font-weight: 700
+        font-size: 80px
+        line-height: 87%
+        margin-top: 0
+        margin-bottom: 100px
+        color: #171717
+    &__subtitle
+        max-width: 220px
+        font-size: 16px
+        line-height: 140%
+        color: #2E2E2E
+        animation-delay: 500ms
+        position: relative
+    &__green
+        display: block
+        width: 147px
+        height: 147px
+        border-radius: 50%
+        position: absolute
+        animation-delay: 1500ms
+        background: #9FF772
+        top: 165px
+        left: -74px
+    &__bottom
+        position: absolute
+        left: 450px
+        bottom: 140px
+        width: 71px
+        height: 71px
+        background: #171717
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 50%
+        animation-delay: 2500ms
+        &.active
+            animation: toTop 4s infinite linear
+    &__products
+        position: absolute
+        left: 580px
+        bottom: -233px
+        z-index: 2
+        animation-delay: 2000ms
+    &__pied
+        position: absolute
+        left: 560px
+        bottom: -306px
+        animation-delay: 1400ms
 .footer
     background: #171717
     padding: 51px 0
@@ -68,6 +318,9 @@
             background: darken(#9FF772, 20)
             animation: toTop 4s infinite linear
 @media(max-width: 991px)
+    .menu
+        &__wrap
+            padding-left: 40px
     .footer
         &__wrap
             flex-wrap: wrap
@@ -76,7 +329,50 @@
         &__top
             order: -1
             margin-left: 200px
+    .main
+        height: auto
+        padding-bottom: 350px
+        &__human
+            display: none
+            &-mob
+                display: flex
+                position: absolute
+                bottom: 0
+                right: 0px
+                animation-delay: 1000ms
+        &__circle
+            top: auto
+            bottom: -50px
+            right: 0
+        &__bottom
+            left: 150px
+        &__products
+            left: 280px
+            bottom: -320px
+        &__pied
+            left: 260px
+            bottom: -340px
+    .header
+        &__wrap
+            width: 100%
+@media(max-width: 849px)
+    .menu
+        background: transparent
+        backdrop-filter: none
+        &__wrap
+            width: 100%
+            padding-left: 40px
+            overflow-y: scroll
+        &__animal
+            display: none
+@media(max-width: 767px)
+    .main
+        &__title
+            font-size: 70px
 @media(max-width: 575px)
+    .menu
+        &__wrap
+            padding-right: 30px
     .footer
         padding-top: 41px
         padding-bottom: 54px
@@ -93,3 +389,48 @@
             font-size: 16px
             line-height: 237%
             margin-bottom: 30px
+    .header
+        padding: 17px 0
+        &__call
+            display: none
+    .main
+        padding-top: 85px
+        padding-bottom: 400px
+        .container
+            position: static
+        &__title
+            font-size: 47.9425px
+            line-height: 87%
+            margin-bottom: 28px
+        &__subtitle
+            margin-bottom: 0
+        &__pied
+            left: 20px
+            width: 50vw
+            bottom: 50px
+            img
+                width: 100%
+        &__products
+            left: 30px
+            bottom: 100px
+            img
+                height: 300px
+        &__bottom
+            display: none
+        &__circle
+            width: 395px
+            height: 395px
+            right: -60px
+            bottom: -18px
+            border: 128px solid #FFFFFF
+@media(max-width: 369px)
+    .main
+        &__circle
+            width: 320px
+            height: 320px
+        &__title
+            font-size: 38px
+    .menu
+        &__wrap
+            a
+                font-size: 14px
