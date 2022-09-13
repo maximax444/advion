@@ -245,6 +245,15 @@ $('.menu__wrap a').on('mouseenter', function () {
     }
 
 });
+$('.menu__wrap a').on('click', function () {
+    $('.menu').addClass('fade');
+
+    setTimeout(function () {
+        $('.menu').removeClass('active');
+        $('.menu').removeClass('fade');
+    }, 500);
+    $('body').css("overflow", "visible");
+});
 $('.header__mob').on('click', function (e) {
     e.preventDefault();
     $('.menu').addClass('active');
